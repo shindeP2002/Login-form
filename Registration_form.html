@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function val{
+var a = document.getElementById("t1").value;
+var a = document.getElementById("t2").value;
+
+if(a=="")
+{
+alert("Name field is required");
+document.getElementById("t1").focus;
+}
+
+if (a.match(/^[A-Za-z ]+$/))
+{}
+else
+{
+alert("Only Characters are Allowed");
+document.getElementById("t1").value="";
+document.getElementById("t1").value="";
+document.getElementById("t1").focus;
+}
+
+if(b.match(/^[0-9]+$/))
+{}
+
+else
+{
+alert("Only Numbers are Allowed");
+document.getElementById("t2").value="";
+document.getElementById("t2").value="";
+document.getElementById("t2").focus;
+}
+
+}
+</script>
+
+</head>
+<body>
+<form>
+
+<table border="1" align="center" bgcolor="pink">
+
+<tr>
+
+<td> Name</td>
+<td> <input type="text" id="t1" placeholder="Enter Name"></td>
+</tr>
+
+<tr>
+
+<td>Contact No </td>
+<td> <input type="text" id="t2" maxlength="10" placeholder="Enter number"></td>
+</tr>
+
+<tr>
+
+<td>Email id </td>
+<td> <input type="Email" id="t3" placeholder="eg@gmail.com"> </td>
+</tr>
+
+<tr>
+
+<td>DOB </td>
+<td> <input type=date id="t4" placeholder="Enter date"> </td>
+
+</tr>
+<tr>
+	<td align="center" colspan=2><input type="submit" value = login>
+	<input type="submit" value="Reset"> </td>
+</tr>
